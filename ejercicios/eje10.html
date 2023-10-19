@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="java.js"></script>
+</head>
+<body>
+    <script>
+        var numero1 = parseInt(prompt("Ingresa el primer número entero:"));
+        var numero2 = parseInt(prompt("Ingresa el segundo número entero:"));
+
+        if (numero1 < numero2) {
+        var suma = numero1 + numero2;
+        var resta = numero2 - numero1;
+        
+        document.write("Suma:", suma);
+        document.write("<br>");
+        document.write("Resta:", resta);
+    } else{
+        
+        var producto = numero1 * numero2;
+        var division = numero1 / numero2;
+        document.write("Producto:", producto);
+        document.write("<br>");
+        document.write("División:", division);
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="java.js"></script>
+</head>
+<body>
+    <script>
+        function calcularsuperficierectangulo(base, altura) {
+            return base * altura;
+        }
+        
+        function calculo() {
+            var base = parseFloat(prompt("Ingresa la longitud de la base del rectángulo: "));
+            var altura = parseFloat(prompt("Ingresa la altura del rectángulo: "));
+        
+            var superficie = calcularsuperficierectangulo(base, altura);
+        
+            document.write("La superficie del rectángulo es:"  + superficie);
+        }
+       calculo()
+    </script>
+</body>
+</html>

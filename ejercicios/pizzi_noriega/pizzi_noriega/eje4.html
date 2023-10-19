@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="java.js"></script>
+</head>
+<body>
+    <script>
+        function calcularPerimetro(lado) {
+            return 4 * lado;
+        }
+        
+        function calcularSuperficie(lado) {
+            return lado * lado;
+        }
+        
+        
+        function calculo() {
+            var lado = parseFloat(prompt("Ingresa la longitud del lado del cuadrado: "));
+            var opcion = prompt("¿Qué quieres calcular, el perímetro o la superficie?");
+        
+            if (opcion == "perimetro") {
+                var perimetro = calcularPerimetro(lado);
+                document.write("El perímetro del cuadrado es:"  + perimetro);
+            } 
+            else if (opcion == "superficie") {
+                var superficie = calcularSuperficie(lado);
+                document.write("La superficie del cuadrado es:"  + superficie);
+            }
+        }
+            
+            calculo()
+    </script>
+</body>
+</html>
